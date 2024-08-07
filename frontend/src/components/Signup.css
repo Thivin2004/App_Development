@@ -1,0 +1,89 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e2e2e2, #ffffff); /* Gradient background for added depth */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.signup-container {
+  background-color: #ffffff; /* White background for the form container */
+  border-radius: 16px; /* More pronounced rounded corners */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+  padding: 40px;
+  max-width: 450px; /* Slightly wider container */
+  margin: 20px;
+  text-align: center;
+  border: 1px solid #e2e2e2; /* Light border to define container edges */
+}
+
+.signup-container h2 {
+  margin-bottom: 20px; /* Space below the header */
+  color: #333; /* Dark color for the header */
+  font-size: 28px; /* Larger font size for the header */
+  font-weight: 500; /* Slightly bold font weight */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased space between form elements */
+}
+
+input {
+  padding: 14px;
+  border: 1px solid #dcdcdc; /* Light gray border */
+  border-radius: 12px; /* Rounded corners for input fields */
+  font-size: 16px;
+  width: 100%; /* Full width of the container */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus effects */
+}
+
+input:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+button {
+  padding: 14px;
+  background-color: #007bff; /* Primary blue color */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 12px; /* Rounded corners for the button */
+  cursor: pointer;
+  font-size: 16px;
+  text-transform: uppercase; /* Uppercase text for emphasis */
+  font-weight: 600; /* Bold font weight */
+  width: 100%; /* Full width of the container */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between button and footer text */
+}
+
+.footer-link {
+  margin-top: 20px; /* Space above the link */
+  font-size: 14px;
+  color: #333; /* Dark color for the footer text */
+}
+
+.footer-link a {
+  color: #007bff; /* Blue color for the link text */
+  text-decoration: none;
+  font-weight: 500; /* Bold font weight for emphasis */
+}
+
+.footer-link a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
