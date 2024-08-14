@@ -1,0 +1,117 @@
+/* Personal Trainer Page Styles */
+
+.personal-trainer-container {
+  padding: 50px;
+  background: linear-gradient(135deg, #e0f2f1, #b2dfdb);
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+.personal-trainer-title {
+  font-size: 3rem;
+  color: #004d40;
+  margin-bottom: 40px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.filter-container {
+  margin-bottom: 30px;
+}
+
+.filter-label {
+  font-size: 1.4rem;
+  margin-right: 15px;
+  color: #004d40;
+}
+
+.filter-select {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #004d40;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trainers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+.trainer-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.trainer-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.trainer-name {
+  font-size: 1.8rem;
+  color: #004d40;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.trainer-specialty {
+  font-size: 1.4rem;
+  color: #00796b;
+  margin-bottom: 8px;
+}
+
+.trainer-experience {
+  font-size: 1.2rem;
+  color: #00796b;
+  margin-bottom: 10px;
+}
+
+.trainer-bio {
+  font-size: 1.2rem;
+  color: #004d40;
+  margin-bottom: 20px;
+}
+
+.trainer-social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.trainer-social-icon {
+  font-size: 1.6rem;
+  color: #004d40;
+  transition: color 0.3s ease;
+}
+
+.trainer-social-icon:hover {
+  color: #00796b;
+}
+
+.contact-button {
+  background-color: #004d40;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #00796b;
+}

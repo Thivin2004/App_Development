@@ -1,0 +1,129 @@
+/* Register.css */
+
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px); /* Adjusted height to account for any fixed headers */
+    margin: 0;
+    padding: 0 20px;
+    background: #f0f2f5; /* Light background for a cleaner look */
+  }
+  
+  .container-reg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    background-color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for container visibility */
+  }
+  
+  .container.hidden {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  
+  .heading {
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-container {
+    margin-right: 12px;
+  }
+  
+  .icon {
+    font-size: 22px;
+    color: #007bff; /* Blue color for a fresh look */
+  }
+  
+  .input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  .or-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .or-text {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .login-container {
+    text-align: center;
+  }
+  
+  .login-text {
+    font-size: 18px;
+    color: #ff0000; /* Error color */
+  }
+  
+  .login-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .login-link:hover {
+    text-decoration: underline;
+  }
+  
+  .error {
+    color: #ff4d4d; /* Error message color */
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+  }

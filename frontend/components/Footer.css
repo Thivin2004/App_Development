@@ -1,0 +1,44 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px; /* Adjust padding if needed */
+  width: 100%;
+  /* If you want the footer fixed at the bottom, uncomment the line below */
+  /* position: fixed; */
+  /* bottom: 0; */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow to distinguish the footer from content */
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-icon {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.footer-icon:hover {
+  color: #ddd;
+}

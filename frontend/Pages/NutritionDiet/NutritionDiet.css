@@ -1,0 +1,112 @@
+/* nutrition-diet.css */
+
+/* General Container */
+.NutritionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+  }
+  
+  /* Title and Subtitle */
+  .NutritionContainer h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .NutritionContainer p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .AddButton, .ViewButton {
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .AddButton {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+  
+  .AddButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .ViewButton {
+    background-color: #28a745;
+    color: #ffffff;
+  }
+  
+  .ViewButton:hover {
+    background-color: #218838;
+  }
+  
+  /* Nutrition Card */
+  .NutritionCard {
+    max-width: 345px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .NutritionCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+  
+  /* Card Media */
+  .CardMediaStyled {
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  /* Card Content */
+  .NutritionCardContent {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+  
+  /* Modal Dialog */
+  .DialogContentStyled {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: #fafafa;
+  }
+  
+  .DialogTitle {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .DialogActions {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Text Fields */
+  .TextField {
+    margin-bottom: 16px;
+  }
+  
+  .TextField label {
+    font-size: 1rem;
+    color: #333;
+  }
+  
