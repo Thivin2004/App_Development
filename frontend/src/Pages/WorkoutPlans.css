@@ -1,0 +1,28 @@
+.workout-plans-container {
+  padding: 20px;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+.workout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.workout-card {
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.workout-list {
+  margin-top: 20px;
+}

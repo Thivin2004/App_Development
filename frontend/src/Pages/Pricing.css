@@ -1,0 +1,179 @@
+/* Pricing.css */
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+.container {
+  margin-top: 60px; /* Adjusted margin for better spacing */
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+/* Pricing Intro */
+.pricing-intro {
+  text-align: center;
+  margin: 80px 0;
+}
+
+.pricing-intro h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #2e3a59;
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-intro p {
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Pricing Cards Container */
+.pricing-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 0 -10px;
+}
+
+/* Card Styling */
+.pricing-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: calc(33% - 20px);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease, border-color 0.4s ease, filter 0.4s ease;
+  position: relative;
+  border: 2px solid #f0f0f0;
+  overflow: hidden; /* Ensures content doesn't spill outside the card */
+}
+
+/* Card Color Variants */
+.card-basic {
+  background: #f9f9f9;
+  border-color: #e3e3e3;
+}
+
+.card-standard {
+  background: #e1f7d5;
+  border-color: #d0e8c0;
+}
+
+.card-premium {
+  background: #fff3e3;
+  border-color: #f6c8b3;
+}
+
+.pricing-card:hover {
+  transform: translateY(-20px) scale(1.05);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+
+.pricing-card:hover.card-basic {
+  background: linear-gradient(135deg, #f9f9f9, #f3f4f6);
+  border-color: #e0e1e3;
+}
+
+.pricing-card:hover.card-standard {
+  background: linear-gradient(135deg, #e1f7d5, #d0e8c0);
+  border-color: #b0d7b0;
+}
+
+.pricing-card:hover.card-premium {
+  background: linear-gradient(135deg, #fff3e3, #f6c8b3);
+  border-color: #e2a899;
+}
+
+/* Card Content */
+.pricing-card h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2e3a59;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.price {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features-list li {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #4a4a4a;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 30px;
+}
+
+.features-list li::before {
+  content: '✔';
+  color: #27ae60;
+  position: absolute;
+  left: 0;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.features-list li:hover::before {
+  color: #1e8449;
+}
+
+/* Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #ff6b6b, #ffb400);
+  border: none;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #ffb400, #ff6b6b);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.1);
+}
+
+.btn-primary:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(255, 105, 97, 0.3);
+}

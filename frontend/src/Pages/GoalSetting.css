@@ -1,0 +1,70 @@
+.goal-setting-container {
+  padding: 20px;
+  background: #e8f5e9;
+  min-height: 100vh;
+}
+
+.goal-setting-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.goal-setting-header h1 {
+  font-size: 2.5rem;
+  color: #1b5e20;
+}
+
+.goal-setting-header p {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.goal-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.goal-card.completed {
+  border: 3px solid #66bb6a;
+}
+
+.goal-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.goal-card-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.goal-card-content h2 {
+  font-size: 1.6rem;
+  margin: 0 0 10px;
+  color: #1b5e20;
+}
+
+.goal-card-content p {
+  font-size: 1.1rem;
+  color: #4caf50;
+}
+
+.goal-card-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.edit-dialog .MuiDialog-paper {
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.edit-dialog .MuiDialogTitle-root {
+  font-size: 1.25rem;
+  color: #388e3c;
+}

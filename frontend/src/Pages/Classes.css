@@ -1,0 +1,36 @@
+.classes-container {
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .classes-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .class-card {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .class-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .class-title {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  

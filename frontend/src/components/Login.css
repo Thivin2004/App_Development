@@ -1,0 +1,112 @@
+/* General container for centering the login form */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Smooth gradient */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Styling for the paper/card that holds the form */
+.login-paper {
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out; /* Subtle animation on hover */
+}
+
+.login-paper:hover {
+  transform: translateY(-10px);
+}
+
+/* Title styling */
+.login-title {
+  font-weight: 600;
+  color: #0072ff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Input fields styling */
+.input-field {
+  margin-bottom: 20px;
+  background-color: #f4f7fa;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.input-field .MuiOutlinedInput-root {
+  border-radius: 8px;
+}
+
+.input-field .MuiInputBase-root {
+  font-size: 16px;
+}
+
+/* Error message style */
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Submit button */
+.submit-button {
+  background-color: #0072ff;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.submit-button:disabled {
+  background-color: #cce4ff;
+}
+
+/* Loading spinner inside button */
+.loading-spinner {
+  color: white;
+  margin-right: 10px;
+}
+
+/* Sign up link */
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #0072ff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  color: #0056b3;
+}
+
+/* Snackbar message styling */
+.MuiSnackbarContent-root {
+  background-color: #28a745; /* Success green */
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 16px;
+}
